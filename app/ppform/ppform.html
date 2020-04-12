@@ -12,9 +12,9 @@
     <h2 class="formTitle__text">Paycheck Protection Program Borrower Application Form</h2> 
   </section>                                      
   <section class="busEntityInfo">                                                  
-    <form action="">                                                               
-      <div class="busOwner">                                                                     
-        <label for="busTypes">Business Type</label>                                              
+    <form action="">                            
+      <div class="formPanel">                     
+        <p>Business Type</p>                            
         <select list="busTypes" name="busTypes">                                                 
           <option value="Choose One">Choose One</option>                                                                              
           <option value="Sole proprietor">Sole proprietor</option>                                                                         
@@ -29,87 +29,177 @@
           <option value="Tribal business (sec. 31(b)(2)(C) of Small Business Act)">Tribal business (sec. 31(b)(2)(C) of Small Business Act)</option>                             
           <option value="Other">Other</option>                                                                                                 
         </select>                                                                                                                      
-        <label for="busName">Business Legal Name</label>                                                                                   
+      </div>                                                                     
+      <div class="formPanel">                                                    
+        <p>Business Legal Name</p>                                               
         <input type="text" id="busName" placeholder="Company Name">                                                                        
-        <div class="inputBox">                                                                                                             
-          <label for="busAddressLine1">Business Address Line 1</label>                                                                     
-          <input type="text" id="busAddressLine1" placeholder="Stree Address">                                                             
-        </div>                                                                                                                             
-        <div class="inputBox">                                                                                                             
-          <label for="busAddressLine2">Business Address Line 2</label>                                                                     
-          <input type="text" id="busAddressLine2" placeholder="Apt or Suite">                                                              
-        </div>                                                                                                                             
-        <div class="inputBox">                                                                                                             
-          <label for="busCity">City</label>                                                                                                
-          <input type="text" id="busCity" placeholder="">                                                                                  
-        </div>                                                                                                                             
-        <div class="inputBox">                                                                                                             
-          <label for="busState">State</label>                                                                                              
-          <input type="text" id="busState" placeholder="">                                                                                 
-        </div>                                                                                                                             
-        <div class="inputBox">                                                                                                             
-          <label for="busPostalCode">Postal Code</label>                                                                                   
-          <input type="text" id="busPostalCode" placeholder="Zip Code">                                                                    
-        </div>                                                                                                                             
-        <div class="inputBox">                                                                                                             
-          <label for="busCountry">Country</label>                                                                                          
-          <input type="text" id="busCountry" placeholder="">                                                                               
-        </div>                                                                                                                             
-        <div class="inputBox">                                                                                                             
-          <label for="busTin">Business TIN</label>                                                                                         
-          <input type="password" id="busTin" placeholder="********">                                                                       
-        </div>                                                                                                                             
-        <div class="inputBox">                                                                                                             
-          <label for="busPhone">Business Phone</label>                                                                                     
-          <input type="text" id="busPhone" placeholder="(xxx)xxx-xxxx">                                                                    
-        </div>                                                                                                                             
-        <div class="businessContact">                                                                                                      
-          <p>Primary Contact</p>                                                                                                           
-          <div class="inputBox">                                                                                                           
-            <label for="busPrimaryContactFirsName">First Name</label>                                                                      
-            <input type="text" id="busPrimaryContactFirsName" placeholder="">                                                              
-          </div>                                                                                                                           
-          <div class="inputBox">                                                                                                           
-            <label for="busPrimaryContactLastName">Last Name</label>                                                                       
-            <input type="text" id="busPrimaryContactLastName" placeholder="">                                                              
-          </div>                                                                                                                           
-          <div class="inputBox">                                                                                                           
-            <label for="busPrimaryContactEmail">Email</label>                                                                              
-            <input type="email" id="busPrimaryContactEmail" placeholder="">                                                                
-          </div>                                                                                                                           
-          <div class="inputBox">                                                                                                           
-            <label for="busMonthlyPayroll">Average Monthly Payroll</label>                                                                 
-            <input type="text" id="busMonthlyPayroll" placeholder="">                                                                      
-          </div>                                                                                                                           
-          <div class="inputBox">                                                                                                           
-            <label for="busNetAdvance">x 2.5 + EIDL, Net of                                                                                
-              Advance (if Applicable)                                                                                                      
-              Equals Loan Request</label>                                                                                                  
-              <input type="text" id="busNetAdvance" placeholder="$">                                                                       
-            </div>                                                                                                                         
-            <div class="inputBox">                                                                                                         
-              <label for="busNumOfEmployees">Number of Employees</label>                                                                   
-              <input type="text" id="busNumOfEmployees" placeholder="">                                                                    
-            </div>                                                                                                                         
-            <div class="checkBoxPanel">                                                                                                    
-              <div>Purpose of the loan (select more than one):</div>                                                                       
-              <input type="checkbox" id="loadPurposePayroll" name="loadPurposePayroll" value="0">                                          
-              <label for="loadPurposePayroll">Payroll</label><br>                                                                          
-              <input type="checkbox" id="loadPurposeLease" name="loadPurposeLease" value="1">                                              
-              <label for="loadPurposeLease">Lease / Mortgage Interest</label><br>                                                          
-              <input type="checkbox" id="loadPurposeUtility" name="loadPurposeUtility" value="3">                                          
-              <label for="loadPurposeUtility">Utilities</label><br><br>                                                                    
-              <input type="checkbox" id="loadPurposeOther" name="loadPurposeOther" value="4">                                              
-              <label for="loadPurposeOther">Utilities</label><br><br>                                                                      
-              <div class="inputBox">                                                                                                       
-                <label for="loadPurposeOtherExplain">Other (explain)</label>                                                               
-                <input type="text" id="loadPurposeOtherExplain" placeholder="">                                                            
-              </div>                                                                                                                       
-            </div>                                                                                                                         
-        </div>                                                                                                                             
-      </div>                                                                                                                               
-      <h3>Applicant Ownership</h3>                                                                                                         
-      <p>List all owners of 20% or more of the equity of the Applicant. Attach a separate sheet if necessary.</p>                                                                                         
+      </div>                                                                     
+      <div class="formPanel">                                                    
+        <p>Business Address</p>                                                  
+        <input type="text" id="busAddressLine1" placeholder="Stree Address">                                                             
+        <input type="text" id="busAddressLine2" placeholder="Stree Address Line 2">                                                              
+        <input type="text" id="busCity" placeholder="City">                                                                                  
+        <input type="text" id="busState" placeholder="State">                                                                                 
+        <input type="text" id="busPostalCode" placeholder="Zip Code">                                                                    
+        <input type="text" id="busCountry" placeholder="Country">                                                                               
+      </div>                                                                     
+      <div class="formPanel">                                                    
+        <p>Business TIN</p>                                                                  
+        <input type="password" id="busTin" placeholder="********">                                                                       
+      </div>                                                                     
+      <div class="formPanel">                                                    
+        <p>Business Phone</p>                                                                  
+        <input type="text" id="busPhone" placeholder="(xxx)xxx-xxxx">                                                                    
+      </div>                                                                     
+      <div class="formPanel">                                                    
+        <p>Primary Contact</p>                                                                  
+        <input type="text" id="busPrimaryContactFirsName" placeholder="First Name">                                                              
+        <input type="text" id="busPrimaryContactLastName" placeholder="Last Name">                                                              
+      </div>                                                                     
+      <div class="formPanel">                                                    
+        <p>Email</p>                                                                  
+        <input type="email" id="busPrimaryContactEmail" placeholder="">                                                                
+      </div>                                                                     
+      <div class="formPanel">                                                    
+        <p>Average Monthly Payroll</p>                                                                  
+        <input type="text" id="busMonthlyPayroll" placeholder="">                                                                      
+      </div>                                                                     
+      <div class="formPanel">                                                    
+        <p>x 2.5 + EIDL, Net of Advance (if Applicable) Equals Loan Request</p>                                                                  
+        <input type="text" id="busNetAdvance" placeholder="$">                                                                       
+      </div>                                                                     
+      <div class="formPanel">                                                    
+        <p>Number of Employees</p>                                                                  
+        <input type="text" id="busNumOfEmployees" placeholder="">                                                                    
+      </div>                                                                     
+                                               
+      <div class="formPanel">                                                    
+        <p>Purpose of the loan (select more than one)</p>                                                                  
+        <input type="checkbox" id="loadPurposePayroll" name="loadPurposePayroll" value="0">                                          
+        <label for="loadPurposePayroll">Payroll</label><br>                                                                          
+        <input type="checkbox" id="loadPurposeLease" name="loadPurposeLease" value="1">                                              
+        <label for="loadPurposeLease">Lease / Mortgage Interest</label><br>                                                          
+        <input type="checkbox" id="loadPurposeUtility" name="loadPurposeUtility" value="3">                                          
+        <label for="loadPurposeUtility">Utilities</label><br><br>                                                                    
+        <input type="checkbox" id="loadPurposeOther" name="loadPurposeOther" value="4">                                              
+        <label for="loadPurposeOther">Other</label><br><br>                
+        <label for="loadPurposeOtherExplain">Other (explain)</label>                                                               
+        <input type="text" id="loadPurposeOtherExplain" placeholder="">                                                                    
+      </div>                                                                     
+                                                                 
+      <div class="formPanel">                                                    
+        <p>Birth Date</p>                                                                  
+        <input type="date" id="birthDate" placeholder="mm/dd/yyyy">                                                                    
+      </div>                                                     
+                                                                 
+      <div class="formPanel">                                                    
+        <p></p>                                                                  
+      </div>                                                                   
+                                                                               
+      <div class="formPanel">                                                    
+        <p></p>                                                                                                                          
+      </div>                                                                                                                             
+                                                                                                                                         
+                                                                                                                                         
+      <h3>Applicant Ownership</h3>                                           
+                                                                             
+      <h3>Question</h3>                                                                                                       
+                                                                                                                                         
+      <div class="question">                                                 
+        <p>1. Is the Applicant or any owner of the Applicant presently suspended, debarred, proposed for debarment, declared ineligible,
+voluntarily excluded from participation in this transaction by any Federal department or agency, or presently involved in any
+bankruptcy?</p>                                                             
+        <div class="question__answer">                                        
+          <input type="radio" value="none" id="answer01__yes" name="answer01">
+          <label for="answer01__yes" class="radio"><span>Yes</span></label>        
+          <input type="radio" value="none" id="answer01__no" name="answer01">
+          <label for="answer01__no" class="radio"><span>No</span></label>         
+        </div>                                                              
+      </div>                          
+                                      
+      <div class="question">          
+        <p>2. Has the Applicant, any owner of the Applicant, or any business owned or controlled by any of them, ever obtained a direct or
+guaranteed loan from SBA or any other Federal agency that is currently delinquent or has defaulted in the last 7 years and
+caused a loss to the government?</p>                                                                                  
+        <div class="question__answer">                                                                                
+          <input type="radio" value="none" id="answer02__yes" name="answer02">                                        
+          <label for="answer02__yes" class="radio"><span>Yes</span></label>                                           
+          <input type="radio" value="none" id="answer02__no" name="answer02">                                         
+          <label for="answer02__no" class="radio"><span>No</span></label>                                             
+        </div>                                                                                                        
+      </div>                          
+                                      
+      <div class="question">                                                                                                                
+        <p>3. Is the Applicant or any owner of the Applicant an owner of any other business, or have common management with, any other
+business? If yes, list all such businesses and describe the relationship on a separate sheet identified as addendum A.</p>                                               
+        <div class="question__answer">                                                                                
+          <input type="radio" value="none" id="answer03__yes" name="answer03">                                        
+          <label for="answer03__yes" class="radio"><span>Yes</span></label>                                           
+          <input type="radio" value="none" id="answer03__no" name="answer03">                                         
+          <label for="answer03__no" class="radio"><span>No</span></label>                                             
+        </div>                                                                                                        
+      </div>                                                 
+                                                             
+      <div class="question">                                 
+        <p>4. Has the Applicant received an SBA Economic Injury Disaster Loan between January 31, 2020 and April 3, 2020? If yes,
+provide details on a separate sheet identified as addendum B.</p>                                                                                        
+        <div class="question__answer">                                                                                
+          <input type="radio" value="none" id="answer04__yes" name="answer04">                                        
+          <label for="answer04__yes" class="radio"><span>Yes</span></label>                                           
+          <input type="radio" value="none" id="answer04__no" name="answer04">                                         
+          <label for="answer04__no" class="radio"><span>No</span></label>                                             
+        </div>                                                                                                        
+      </div>                                                                      
+                                                                                                              
+      <div class="question">                                                      
+        <p>5. Is the Applicant (if an individual) or any individual owning 20% or more of the equity of the Applicant subject
+to an indictment, criminal information, arraignment, or other means by which formal criminal charges are
+brought in any jurisdiction, or presently incarcerated, or on probation or parole?</p>                                                                                        
+        <div class="question__answer">                                                                                
+          <input type="radio" value="none" id="answer05__yes" name="answer05">                                        
+          <label for="answer05__yes" class="radio"><span>Yes</span></label>                                           
+          <input type="radio" value="none" id="answer05__no" name="answer05">                                         
+          <label for="answer05__no" class="radio"><span>No</span></label>                                             
+        </div>                                                                                                        
+      </div>                                                                      
+                                                                                                              
+      <div class="question">                                                      
+        <p>6. Within the last 5 years, for any felony, has the Applicant (if an individual) or any owner of the Applicant 1)
+been convicted; 2) pleaded guilty; 3) pleaded nolo contendere; 4) been placed on pretrial diversion; or 5) been
+placed on any form of parole or probation (including probation before judgment)?</p>                                                                                        
+        <div class="question__answer">                                                                                
+          <input type="radio" value="none" id="answer06__yes" name="answer06">                                        
+          <label for="answer06__yes" class="radio"><span>Yes</span></label>                                           
+          <input type="radio" value="none" id="answer06__no" name="answer06">                                         
+          <label for="answer06__no" class="radio"><span>No</span></label>                                             
+        </div>                                                                                                        
+      </div>                                           
+                                                                                                               
+      <div class="question">                                                      
+        <p>7. Is the United States the principal place of residence for all employees of the Applicant included in the
+Applicant’s payroll calculation above?</p>                                                                                        
+        <div class="question__answer">                                                                                
+          <input type="radio" value="none" id="answer07__yes" name="answer07">                                        
+          <label for="answer07__yes" class="radio"><span>Yes</span></label>                                           
+          <input type="radio" value="none" id="answer07__no" name="answer07">                                         
+          <label for="answer07__no" class="radio"><span>No</span></label>                                             
+        </div>                                                                                                        
+      </div>                                                                               
+                                                                                                               
+      <div class="question">                                                               
+        <p>8. Is the Applicant a franchise that is listed in the SBA’s Franchise Directory?</p>                                                                                        
+        <div class="question__answer">                                                                                                   
+          <input type="radio" value="none" id="answer08__yes" name="answer08">                                                           
+          <label for="answer08__yes" class="radio"><span>Yes</span></label>                                                              
+          <input type="radio" value="none" id="answer08__no" name="answer08">                                                            
+          <label for="answer08__no" class="radio"><span>No</span></label>                                                                
+        </div>                                                                                                                           
+      </div>                                
+                                            
+      <div class="btn-block">               
+        <button type="submit" href="/">Apply</button>
+      </div>                                
+                                            
     </form>                                                                                                                              
   </section>                                                                                                                             
 </body>                                                                                                                                  
