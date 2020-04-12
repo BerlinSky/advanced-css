@@ -31,17 +31,21 @@
         </select>                                                                                                                      
       </div>                                                                     
       <div class="formPanel">                                                    
-        <p>Business Legal Name</p>                                               
+        <p>Business Legal Name
+          <span>*</span>
+        </p>                                               
         <input type="text" id="busName" placeholder="Company Name">                                                                        
       </div>                                                                     
       <div class="formPanel">                                                    
         <p>Business Address</p>                                                  
         <input type="text" id="busAddressLine1" placeholder="Stree Address">                                                             
         <input type="text" id="busAddressLine2" placeholder="Stree Address Line 2">                                                              
-        <input type="text" id="busCity" placeholder="City">                                                                                  
-        <input type="text" id="busState" placeholder="State">                                                                                 
-        <input type="text" id="busPostalCode" placeholder="Zip Code">                                                                    
-        <input type="text" id="busCountry" placeholder="Country">                                                                               
+        <div class="formPanel__city">                         
+          <input type="text" id="busCity" placeholder="City">                                                                                  
+          <input type="text" id="busState" placeholder="State">                                                                                 
+          <input type="text" id="busPostalCode" placeholder="Zip Code">                                                                    
+          <input type="text" id="busCountry" placeholder="Country">   
+        </div>                                                                            
       </div>                                                                     
       <div class="formPanel">                                                    
         <p>Business TIN</p>                                                                  
@@ -52,9 +56,11 @@
         <input type="text" id="busPhone" placeholder="(xxx)xxx-xxxx">                                                                    
       </div>                                                                     
       <div class="formPanel">                                                    
-        <p>Primary Contact</p>                                                                  
-        <input type="text" id="busPrimaryContactFirsName" placeholder="First Name">                                                              
-        <input type="text" id="busPrimaryContactLastName" placeholder="Last Name">                                                              
+        <p>Primary Contact</p>                                      
+        <div class="formPanel__name">                               
+          <input type="text" id="busPrimaryContactFirsName" placeholder="First Name">                                                              
+          <input type="text" id="busPrimaryContactLastName" placeholder="Last Name">                                                              
+        </div>                                                               
       </div>                                                                     
       <div class="formPanel">                                                    
         <p>Email</p>                                                                  
@@ -72,10 +78,12 @@
         <p>Number of Employees</p>                                                                  
         <input type="text" id="busNumOfEmployees" placeholder="">                                                                    
       </div>                                                                     
-                                               
+                                                                    
       <div class="formPanel">                                                    
-        <p>Purpose of the loan (select more than one)</p>                                                                  
-        <input type="checkbox" id="loadPurposePayroll" name="loadPurposePayroll" value="0">                                          
+        <p>Purpose of the loan (select more than one)</p>    
+        <div class="checkbox">                               
+          <input type="checkbox" id="loadPurposePayroll" name="loadPurposePayroll" value="0">                                          
+        </div>                                                              
         <label for="loadPurposePayroll">Payroll</label><br>                                                                          
         <input type="checkbox" id="loadPurposeLease" name="loadPurposeLease" value="1">                                              
         <label for="loadPurposeLease">Lease / Mortgage Interest</label><br>                                                          
@@ -86,12 +94,12 @@
         <label for="loadPurposeOtherExplain">Other (explain)</label>                                                               
         <input type="text" id="loadPurposeOtherExplain" placeholder="">                                                                    
       </div>                                                                     
-                                                                 
+                                                                    
       <div class="formPanel">                                                    
         <p>Birth Date</p>                                                                  
         <input type="date" id="birthDate" placeholder="mm/dd/yyyy">                                                                    
-      </div>                                                     
-                                                                 
+      </div>                                                        
+                                                                    
       <div class="formPanel">                                                    
         <p></p>                                                                  
       </div>                                                                   
@@ -115,9 +123,9 @@ bankruptcy?</p>
           <input type="radio" value="none" id="answer01__no" name="answer01">
           <label for="answer01__no" class="radio"><span>No</span></label>         
         </div>                                                              
-      </div>                          
-                                      
-      <div class="question">          
+      </div>                                                        
+                                                                    
+      <div class="question">                                        
         <p>2. Has the Applicant, any owner of the Applicant, or any business owned or controlled by any of them, ever obtained a direct or
 guaranteed loan from SBA or any other Federal agency that is currently delinquent or has defaulted in the last 7 years and
 caused a loss to the government?</p>                                                                                  
@@ -127,8 +135,8 @@ caused a loss to the government?</p>
           <input type="radio" value="none" id="answer02__no" name="answer02">                                         
           <label for="answer02__no" class="radio"><span>No</span></label>                                             
         </div>                                                                                                        
-      </div>                          
-                                      
+      </div>                                                        
+                                                                    
       <div class="question">                                                                                                                
         <p>3. Is the Applicant or any owner of the Applicant an owner of any other business, or have common management with, any other
 business? If yes, list all such businesses and describe the relationship on a separate sheet identified as addendum A.</p>                                               
@@ -138,9 +146,9 @@ business? If yes, list all such businesses and describe the relationship on a se
           <input type="radio" value="none" id="answer03__no" name="answer03">                                         
           <label for="answer03__no" class="radio"><span>No</span></label>                                             
         </div>                                                                                                        
-      </div>                                                 
-                                                             
-      <div class="question">                                 
+      </div>                                                        
+                                                                    
+      <div class="question">                                        
         <p>4. Has the Applicant received an SBA Economic Injury Disaster Loan between January 31, 2020 and April 3, 2020? If yes,
 provide details on a separate sheet identified as addendum B.</p>                                                                                        
         <div class="question__answer">                                                                                
@@ -173,7 +181,7 @@ placed on any form of parole or probation (including probation before judgment)?
           <input type="radio" value="none" id="answer06__no" name="answer06">                                         
           <label for="answer06__no" class="radio"><span>No</span></label>                                             
         </div>                                                                                                        
-      </div>                                           
+      </div>                                                        
                                                                                                                
       <div class="question">                                                      
         <p>7. Is the United States the principal place of residence for all employees of the Applicant included in the
@@ -194,12 +202,12 @@ Applicant’s payroll calculation above?</p>
           <input type="radio" value="none" id="answer08__no" name="answer08">                                                            
           <label for="answer08__no" class="radio"><span>No</span></label>                                                                
         </div>                                                                                                                           
-      </div>                                
-                                            
-      <div class="btn-block">               
-        <button type="submit" href="/">Apply</button>
-      </div>                                
-                                            
+      </div>                                                        
+                                                                    
+      <div class="btn-block">                                       
+        <button type="submit" href="/">Apply</button>               
+      </div>                                                        
+                                                                    
     </form>                                                                                                                              
   </section>                                                                                                                             
 </body>                                                                                                                                  
