@@ -1,114 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">                                               
 <head>                                                         
-  <meta charset="UTF-8">                                             
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PP Form</title>                                             
+  <meta charset="UTF-8">                                                           
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">           
+  <title>PP Form</title>                                                           
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">                                                             
   <link rel="stylesheet" href="ppform.css">                                                    
 </head>                                                                                        
-<body>                                                                                         
-  <section class="busEntityInfo">                                                              
-    <div class="busOwner">                                                                     
-      <label for="busTypes">Business Type</label>                                              
-      <select list="busTypes" name="busTypes">                                             
-        <option value="Choose One">Choose One</option>                                                                              
-        <option value="Sole proprietor">Sole proprietor</option>                                                                         
-        <option value="Partnership">Partnership</option>                                                                                            
-        <option value="C-Corp">C-Corp</option>                                                                                           
-        <option value="S-Corp">S-Corp</option>                                                                                           
-        <option value="LLC">LLC</option>                                                                                                 
-        <option value="Independent contractor">Independent contractor</option>                                                           
-        <option value="Eligible self-employed individual">Eligible self-employed individual</option>                                     
-        <option value="501(c)(3) nonprofit">501(c)(3) nonprofit</option>                                                                 
-        <option value="501(c)(19) veterans organization">501(c)(19) veterans organization</option>                                       
-        <option value="Tribal business (sec. 31(b)(2)(C) of Small Business Act)">Tribal business (sec. 31(b)(2)(C) of Small Business Act)</option>                             
-        <option value="Other">Other</option>                                                                                                 
-      </select>                                                                                                                      
-      <label for="busName">Business Legal Name</label>                                                                                   
-      <input type="text" id="busName" placeholder="Company Name">                                                                        
-      <div class="inputBox">                                                                                                             
-        <label for="busAddressLine1">Business Address Line 1</label>                                                                     
-        <input type="text" id="busAddressLine1" placeholder="Stree Address">                                                             
-      </div>                                                                                                                             
-      <div class="inputBox">                                                                                                             
-        <label for="busAddressLine2">Business Address Line 2</label>                                                                     
-        <input type="text" id="busAddressLine2" placeholder="Apt or Suite">                                                              
-      </div>                                                                                                                             
-      <div class="inputBox">                                                                                                             
-        <label for="busCity">City</label>                                                                                                
-        <input type="text" id="busCity" placeholder="">                                                                                  
-      </div>                                                                                                                             
-      <div class="inputBox">                                                                                                             
-        <label for="busState">State</label>                                                                                              
-        <input type="text" id="busState" placeholder="">                                                                                 
-      </div>                                                                                                                             
-      <div class="inputBox">                                                                                                             
-        <label for="busPostalCode">Postal Code</label>                                                                                   
-        <input type="text" id="busPostalCode" placeholder="Zip Code">                                                                    
-      </div>                                                                                                                             
-      <div class="inputBox">                                                                                                             
-        <label for="busCountry">Country</label>                                                                                          
-        <input type="text" id="busCountry" placeholder="">                                                                               
-      </div>                                                                                                                             
-      <div class="inputBox">                                                                                                             
-        <label for="busTin">Business TIN</label>                                                                                         
-        <input type="password" id="busTin" placeholder="********">                                                                       
-      </div>                                                                                                                             
-      <div class="inputBox">                                                                                                             
-        <label for="busPhone">Business Phone</label>                                                                                     
-        <input type="text" id="busPhone" placeholder="(xxx)xxx-xxxx">                                                                    
-      </div>                                                                                                                             
-      <div class="businessContact">                                                                                                      
-        <p>Primary Contact</p>                                                                                                           
-        <div class="inputBox">                                                                                                           
-          <label for="busPrimaryContactFirsName">First Name</label>                                                                      
-          <input type="text" id="busPrimaryContactFirsName" placeholder="">                                                              
-        </div>                                                                                                                           
-        <div class="inputBox">                                                                                                           
-          <label for="busPrimaryContactLastName">Last Name</label>                                                                       
-          <input type="text" id="busPrimaryContactLastName" placeholder="">                                                              
-        </div>                                                                                                                           
-        <div class="inputBox">                                                                                                           
-          <label for="busPrimaryContactEmail">Email</label>                                                                              
-          <input type="email" id="busPrimaryContactEmail" placeholder="">                                                                
-        </div>                                                                                                                           
-        <div class="inputBox">                                                                                                           
-          <label for="busMonthlyPayroll">Average Monthly Payroll</label>                                                                 
-          <input type="text" id="busMonthlyPayroll" placeholder="">                                                                      
-        </div>                                                                                                                           
-        <div class="inputBox">                                                                                                           
-          <label for="busNetAdvance">x 2.5 + EIDL, Net of                                                                                
-            Advance (if Applicable)                                                                                                      
-            Equals Loan Request</label>                                                                                                  
-            <input type="text" id="busNetAdvance" placeholder="$">                                                                       
-          </div>                                                                                                                         
-          <div class="inputBox">                                                                                                         
-            <label for="busNumOfEmployees">Number of Employees</label>                                                                   
-            <input type="text" id="busNumOfEmployees" placeholder="">                                                                    
-          </div>                                                                                                                         
-          <div class="checkBoxPanel">                                                                                                    
-            <div>Purpose of the loan (select more than one):</div>                                                                       
-            <input type="checkbox" id="loadPurposePayroll" name="loadPurposePayroll" value="0">                                          
-            <label for="loadPurposePayroll">Payroll</label><br>                                                                          
-            <input type="checkbox" id="loadPurposeLease" name="loadPurposeLease" value="1">                                              
-            <label for="loadPurposeLease">Lease / Mortgage Interest</label><br>                                                          
-            <input type="checkbox" id="loadPurposeUtility" name="loadPurposeUtility" value="3">                                          
-            <label for="loadPurposeUtility">Utilities</label><br><br>                                                                    
-            <input type="checkbox" id="loadPurposeOther" name="loadPurposeOther" value="4">                                              
-            <label for="loadPurposeOther">Utilities</label><br><br>                                                                      
-            <div class="inputBox">                                                                                                       
-              <label for="loadPurposeOtherExplain">Other (explain)</label>                                                               
-              <input type="text" id="loadPurposeOtherExplain" placeholder="">                                                            
-            </div>                                                                                                                       
-          </div>                                                                                                                         
-      </div>                                                                                                                             
-    </div>                                                                                                                               
+<body>                                                                             
+  <section class="formTitle">                               
+    <h2 class="formTitle__text">Paycheck Protection Program Borrower Application Form</h2> 
+  </section>                                      
+  <section class="busEntityInfo">                                                  
+    <form action="">                                                               
+      <div class="busOwner">                                                                     
+        <label for="busTypes">Business Type</label>                                              
+        <select list="busTypes" name="busTypes">                                                 
+          <option value="Choose One">Choose One</option>                                                                              
+          <option value="Sole proprietor">Sole proprietor</option>                                                                         
+          <option value="Partnership">Partnership</option>                                                                                            
+          <option value="C-Corp">C-Corp</option>                                                                                           
+          <option value="S-Corp">S-Corp</option>                                                                                           
+          <option value="LLC">LLC</option>                                                                                                 
+          <option value="Independent contractor">Independent contractor</option>                                                           
+          <option value="Eligible self-employed individual">Eligible self-employed individual</option>                                     
+          <option value="501(c)(3) nonprofit">501(c)(3) nonprofit</option>                                                                 
+          <option value="501(c)(19) veterans organization">501(c)(19) veterans organization</option>                                       
+          <option value="Tribal business (sec. 31(b)(2)(C) of Small Business Act)">Tribal business (sec. 31(b)(2)(C) of Small Business Act)</option>                             
+          <option value="Other">Other</option>                                                                                                 
+        </select>                                                                                                                      
+        <label for="busName">Business Legal Name</label>                                                                                   
+        <input type="text" id="busName" placeholder="Company Name">                                                                        
+        <div class="inputBox">                                                                                                             
+          <label for="busAddressLine1">Business Address Line 1</label>                                                                     
+          <input type="text" id="busAddressLine1" placeholder="Stree Address">                                                             
+        </div>                                                                                                                             
+        <div class="inputBox">                                                                                                             
+          <label for="busAddressLine2">Business Address Line 2</label>                                                                     
+          <input type="text" id="busAddressLine2" placeholder="Apt or Suite">                                                              
+        </div>                                                                                                                             
+        <div class="inputBox">                                                                                                             
+          <label for="busCity">City</label>                                                                                                
+          <input type="text" id="busCity" placeholder="">                                                                                  
+        </div>                                                                                                                             
+        <div class="inputBox">                                                                                                             
+          <label for="busState">State</label>                                                                                              
+          <input type="text" id="busState" placeholder="">                                                                                 
+        </div>                                                                                                                             
+        <div class="inputBox">                                                                                                             
+          <label for="busPostalCode">Postal Code</label>                                                                                   
+          <input type="text" id="busPostalCode" placeholder="Zip Code">                                                                    
+        </div>                                                                                                                             
+        <div class="inputBox">                                                                                                             
+          <label for="busCountry">Country</label>                                                                                          
+          <input type="text" id="busCountry" placeholder="">                                                                               
+        </div>                                                                                                                             
+        <div class="inputBox">                                                                                                             
+          <label for="busTin">Business TIN</label>                                                                                         
+          <input type="password" id="busTin" placeholder="********">                                                                       
+        </div>                                                                                                                             
+        <div class="inputBox">                                                                                                             
+          <label for="busPhone">Business Phone</label>                                                                                     
+          <input type="text" id="busPhone" placeholder="(xxx)xxx-xxxx">                                                                    
+        </div>                                                                                                                             
+        <div class="businessContact">                                                                                                      
+          <p>Primary Contact</p>                                                                                                           
+          <div class="inputBox">                                                                                                           
+            <label for="busPrimaryContactFirsName">First Name</label>                                                                      
+            <input type="text" id="busPrimaryContactFirsName" placeholder="">                                                              
+          </div>                                                                                                                           
+          <div class="inputBox">                                                                                                           
+            <label for="busPrimaryContactLastName">Last Name</label>                                                                       
+            <input type="text" id="busPrimaryContactLastName" placeholder="">                                                              
+          </div>                                                                                                                           
+          <div class="inputBox">                                                                                                           
+            <label for="busPrimaryContactEmail">Email</label>                                                                              
+            <input type="email" id="busPrimaryContactEmail" placeholder="">                                                                
+          </div>                                                                                                                           
+          <div class="inputBox">                                                                                                           
+            <label for="busMonthlyPayroll">Average Monthly Payroll</label>                                                                 
+            <input type="text" id="busMonthlyPayroll" placeholder="">                                                                      
+          </div>                                                                                                                           
+          <div class="inputBox">                                                                                                           
+            <label for="busNetAdvance">x 2.5 + EIDL, Net of                                                                                
+              Advance (if Applicable)                                                                                                      
+              Equals Loan Request</label>                                                                                                  
+              <input type="text" id="busNetAdvance" placeholder="$">                                                                       
+            </div>                                                                                                                         
+            <div class="inputBox">                                                                                                         
+              <label for="busNumOfEmployees">Number of Employees</label>                                                                   
+              <input type="text" id="busNumOfEmployees" placeholder="">                                                                    
+            </div>                                                                                                                         
+            <div class="checkBoxPanel">                                                                                                    
+              <div>Purpose of the loan (select more than one):</div>                                                                       
+              <input type="checkbox" id="loadPurposePayroll" name="loadPurposePayroll" value="0">                                          
+              <label for="loadPurposePayroll">Payroll</label><br>                                                                          
+              <input type="checkbox" id="loadPurposeLease" name="loadPurposeLease" value="1">                                              
+              <label for="loadPurposeLease">Lease / Mortgage Interest</label><br>                                                          
+              <input type="checkbox" id="loadPurposeUtility" name="loadPurposeUtility" value="3">                                          
+              <label for="loadPurposeUtility">Utilities</label><br><br>                                                                    
+              <input type="checkbox" id="loadPurposeOther" name="loadPurposeOther" value="4">                                              
+              <label for="loadPurposeOther">Utilities</label><br><br>                                                                      
+              <div class="inputBox">                                                                                                       
+                <label for="loadPurposeOtherExplain">Other (explain)</label>                                                               
+                <input type="text" id="loadPurposeOtherExplain" placeholder="">                                                            
+              </div>                                                                                                                       
+            </div>                                                                                                                         
+        </div>                                                                                                                             
+      </div>                                                                                                                               
+      <h3>Applicant Ownership</h3>                                                                                                         
+      <p>List all owners of 20% or more of the equity of the Applicant. Attach a separate sheet if necessary.</p>                                                                                         
+    </form>                                                                                                                              
   </section>                                                                                                                             
-  <section class="applicants">                                                                                                           
-    <h3>Applicant Ownership</h3>                                                                                                         
-    <p>List all owners of 20% or more of the equity of the Applicant. Attach a separate sheet if necessary.</p>                                                                                         
-  </section>                                                                                                                             
-  <section class="questions"></section>                                                                                                  
 </body>                                                                                                                                  
 </html>                                                                                                                                  

@@ -1,11 +1,11 @@
 html, body {
   min-height: 100%;
   font-size: 10px;        
-}                         
-                          
+}                             
+                              
 body, div, form, input, select, textarea, p { 
-  padding: 0;             
-  margin: 0;              
+  padding: 0;                 
+  margin: 0;                  
   outline: none;              
   font-family: Roboto, Arial, sans-serif;
   font-size: 14px;            
@@ -13,12 +13,13 @@ body, div, form, input, select, textarea, p {
   line-height: 22px;          
 }                             
                               
-h1 {                          
-  position: absolute;         
+.formTitle {                  
+  width: calc(100% - 40px);                
+}                             
+.formTitle__text {                          
   margin: 0;                  
-  font-size: 32px;            
-  color: #fff;                
-  z-index: 2;                 
+  font-size: 2rem;            
+  color: #000000;                
 }                             
                               
 body {                        
@@ -26,6 +27,7 @@ body {
   flex-direction: column;     
   justify-content: flex-start;
   align-items: flex-start;    
+  max-width: 100vw;           
 }                             
                               
 section {                     
@@ -36,41 +38,27 @@ section {
   padding: 20px;              
 }                             
                               
-  .testbox {                  
+  /* .testbox {                  
   display: flex;              
   justify-content: center;    
   align-items: center;        
   height: inherit;            
   padding: 20px;              
-  }                           
+  }                            */
                               
-  form {                      
+form {                        
   width: 100%;                
   padding: 20px;              
   border-radius: 6px;         
   background: #fff;           
   box-shadow: 0 0 30px 0 #8ebf42; 
-  }                           
-  .banner {                   
-  position: relative;         
-  height: 210px;              
-  background-image: url("/uploads/media/default/0001/01/a3df023f124a8bec3b213347404fe0a7318161de.jpeg");  
-  background-size: cover;     
-  display: flex;              
-  justify-content: center;    
-  align-items: center;        
-  text-align: center;         
-  }                           
-  .banner::after {            
-  content: "";                
-  background-color: rgba(0, 0, 0, 0.5); 
-  position: absolute;         
-  width: 100%;                
-  height: 100%;               
-  }                           
+}                             
+                              
+                              
   p.top-info {                
   margin: 10px 0;             
   }                           
+                              
   input, select, textarea {   
   margin-bottom: 10px;        
   border: 1px solid #ccc;     
