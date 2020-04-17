@@ -5,18 +5,14 @@ const inputNodeList = document
   .getElementById('infoForm')
   .querySelectorAll('select, input')
 
-// console.info('inputNodeList', inputNodeList)
-
 const readNodeList = nodeList => {
   for (let i = 0; i < nodeList.length; i++) {
-    nodeList[i].style.backgroundColor = 'darkblue'
-
     const d = readInput(nodeList[i])
     console.log('d', d)
   }
 }
 
-function readInput(elem) {
+const readInput = elem => {
   const d = {
     id: elem.id,
     currentValue: elem.value,
