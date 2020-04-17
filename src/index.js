@@ -23,8 +23,11 @@ const readInput = elem => {
   return d
 }
 
-const test = readNodeList(inputNodeList)
+function submitApplication(event) {
+  event.preventDefault()
 
-console.log('test', test)
+  readNodeList(inputNodeList)
+}
 
-export default readNodeList
+const button = document.getElementById('apply')
+button.addEventListener('click', submitApplication)
