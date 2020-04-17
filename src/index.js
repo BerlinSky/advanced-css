@@ -5,7 +5,7 @@ const inputNodeList = document
   .getElementById('infoForm')
   .querySelectorAll('select, input')
 
-console.info('inputNodeList', inputNodeList)
+// console.info('inputNodeList', inputNodeList)
 
 const readNodeList = nodeList => {
   for (let i = 0; i < nodeList.length; i++) {
@@ -21,7 +21,7 @@ function readInput(elem) {
     id: elem.id,
     currentValue: elem.value,
     type: elem.type,
-    require: elem.require
+    require: elem.required
   }
 
   return d
