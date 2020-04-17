@@ -10,7 +10,21 @@ console.info('inputNodeList', inputNodeList)
 const readNodeList = nodeList => {
   for (let i = 0; i < nodeList.length; i++) {
     nodeList[i].style.backgroundColor = 'darkblue'
+
+    const d = readInput(nodeList[i])
+    console.log('d', d)
   }
+}
+
+function readInput(elem) {
+  const d = {
+    id: elem.id,
+    currentValue: elem.value,
+    type: elem.type,
+    require: elem.require
+  }
+
+  return d
 }
 
 const test = readNodeList(inputNodeList)

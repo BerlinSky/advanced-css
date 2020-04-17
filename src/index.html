@@ -19,7 +19,7 @@
       <form id="infoForm" action="">
         <div class="formPanel">
           <p>Business Type</p>
-          <select id="busTypes" name="busTypes">
+          <select id="busTypes" name="busTypes" required>
             <option value="Choose One">Choose One</option>
             <option value="Sole proprietor">Sole proprietor</option>
             <option value="Partnership">Partnership</option>
@@ -48,30 +48,45 @@
             Business Legal Name
             <span>*</span>
           </p>
-          <input type="text" id="busName" placeholder="Company Name" />
+          <input type="text" id="busName" required placeholder="Company Name" />
         </div>
         <div class="formPanel">
           <p>Business Address</p>
-          <input type="text" id="busAddressLine1" placeholder="Stree Address" />
+          <input
+            type="text"
+            id="busAddressLine1"
+            required
+            placeholder="Stree Address"
+          />
           <input
             type="text"
             id="busAddressLine2"
             placeholder="Stree Address Line 2"
           />
           <div class="formPanel__city">
-            <input type="text" id="busCity" placeholder="City" />
-            <input type="text" id="busState" placeholder="State" />
-            <input type="text" id="busPostalCode" placeholder="Zip Code" />
-            <input type="text" id="busCountry" placeholder="Country" />
+            <input type="text" id="busCity" required placeholder="City" />
+            <input type="text" id="busState" required placeholder="State" />
+            <input
+              type="text"
+              id="busPostalCode"
+              required
+              placeholder="Zip Code"
+            />
+            <input type="text" id="busCountry" required placeholder="Country" />
           </div>
         </div>
         <div class="formPanel">
           <p>Business TIN</p>
-          <input type="password" id="busTin" placeholder="********" />
+          <input type="password" id="busTin" required placeholder="********" />
         </div>
         <div class="formPanel">
           <p>Business Phone</p>
-          <input type="text" id="busPhone" placeholder="(xxx)xxx-xxxx" />
+          <input
+            type="text"
+            id="busPhone"
+            required
+            placeholder="(xxx)xxx-xxxx"
+          />
         </div>
         <div class="formPanel">
           <p>Primary Contact</p>
@@ -79,32 +94,39 @@
             <input
               type="text"
               id="busPrimaryContactFirstName"
+              required
               placeholder="First Name"
             />
             <input
               type="text"
               id="busPrimaryContactLastName"
+              required
               placeholder="Last Name"
             />
           </div>
         </div>
         <div class="formPanel">
           <p>Email</p>
-          <input type="email" id="busPrimaryContactEmail" placeholder="" />
+          <input
+            type="email"
+            id="busPrimaryContactEmail"
+            prequired
+            laceholder=""
+          />
         </div>
         <div class="formPanel">
           <p>Average Monthly Payroll</p>
-          <input type="text" id="busMonthlyPayroll" placeholder="" />
+          <input type="text" id="busMonthlyPayroll" required placeholder="" />
         </div>
         <div class="formPanel">
           <p>
             x 2.5 + EIDL, Net of Advance (if Applicable) Equals Loan Request
           </p>
-          <input type="text" id="busNetAdvance" placeholder="$" />
+          <input type="text" id="busNetAdvance" required placeholder="$" />
         </div>
         <div class="formPanel">
           <p>Number of Employees</p>
-          <input type="text" id="busNumOfEmployees" placeholder="" />
+          <input type="text" id="busNumOfEmployees" required placeholder="" />
         </div>
 
         <div class="formPanel">
@@ -147,7 +169,7 @@
 
         <div class="formPanel">
           <p>Birth Date</p>
-          <input type="date" id="birthDate" placeholder="mm/dd/yyyy" />
+          <input type="date" id="birthDate" required placeholder="mm/dd/yyyy" />
         </div>
 
         <h3>Applicant Ownership</h3>
