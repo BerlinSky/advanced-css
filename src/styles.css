@@ -1,5 +1,6 @@
 :root {
   --main-text-color: #000000;
+  --main-border-color: #4d4949;
   --main-shadow-color: #b20e10;
   --main-error-color: rgb(255, 0, 0);
 }
@@ -342,4 +343,11 @@ button:hover {
   border-width: 0 2px 2px 0;
   background-color: transparent;
   border-radius: 0;
+}
+
+fieldset {
+  margin: 1rem 0 2.5rem 0;
+  padding: 0 1.5rem 0 1.5rem;
+  border: 1px solid var(--main-border-color);
+  border-radius: 1rem;
 }
