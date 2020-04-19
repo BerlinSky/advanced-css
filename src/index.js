@@ -1,5 +1,23 @@
 /* eslint-disable no-console */
 import './styles.css'
+import validate from 'validate.js'
+
+const constraints = {
+  username: {
+    presence: true,
+    exclusion: {
+      within: ['nicklas'],
+      message: "'%{value}' is not allowed"
+    }
+  },
+  password: {
+    presence: true,
+    length: {
+      minimum: 6,
+      message: 'must be at least 6 characters'
+    }
+  }
+}
 
 const inputNodeList = document
   .getElementById('infoForm')
@@ -10,6 +28,12 @@ const readNodeList = nodeList => {
     const d = readInput(nodeList[i])
     console.log('d', d)
   }
+}
+
+const getFormInfo = () => {
+  const f = document.getElementById('infoForm')
+  const fv = validate.collectFormValues(f)
+  console.log('form values: ', fv)
 }
 
 const readInput = elem => {
@@ -27,7 +51,17 @@ function submitApplication(event) {
   event.preventDefault()
 
   readNodeList(inputNodeList)
+
+  const result = validate({ password: 'bad' }, constraints)
+
+  console.log('result', result)
 }
 
-const button = document.getElementById('apply')
-button.addEventListener('click', submitApplication)
+// eslint-disable-next-line no-extra-semi
+;(function() {
+  const button = document.getElementById('apply')
+  button.addEventListener('click', submitApplication)
+  console.log('start...')
+
+  getFormInfo()
+})()
