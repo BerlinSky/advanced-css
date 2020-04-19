@@ -351,11 +351,3 @@ fieldset {
   border: 1px solid var(--main-border-color);
   border-radius: 1rem;
 }
-
-.validationMessage {
-  display: none;
-}
-
-.validationMessage.validationMessage--error {
-  display: block;
-}

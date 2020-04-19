@@ -23,6 +23,7 @@ const setAllValidationErrorMessage = resultObject => {
     setSingleValidationErrorMessage(elemName, message)
   }
 }
+
 const validateFormInputs = () => {
   const formData = getFormInfo()
   const resultObject = validate(formData, constraints)
