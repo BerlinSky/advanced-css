@@ -17,72 +17,110 @@
     </section>
     <section class="busEntityInfo">
       <form id="infoForm" action="/">
-        <div class="formPanel">
-          <p>Business Type</p>
-          <select id="busTypes" name="busTypes">
-            <option value="Choose One">Choose One</option>
-            <option value="Sole proprietor">Sole proprietor</option>
-            <option value="Partnership">Partnership</option>
-            <option value="C-Corp">C-Corp</option>
-            <option value="S-Corp">S-Corp</option>
-            <option value="LLC">LLC</option>
-            <option value="Independent contractor"
-              >Independent contractor</option
-            >
-            <option value="Eligible self-employed individual"
-              >Eligible self-employed individual</option
-            >
-            <option value="501(c)(3) nonprofit">501(c)(3) nonprofit</option>
-            <option value="501(c)(19) veterans organization"
-              >501(c)(19) veterans organization</option
-            >
-            <option
-              value="Tribal business (sec. 31(b)(2)(C) of Small Business Act)"
-              >Tribal business (sec. 31(b)(2)(C) of Small Business Act)</option
-            >
-            <option value="Other">Other</option>
-          </select>
-        </div>
-        <div class="formPanel">
-          <p>
-            Business Legal Name
-            <span>*</span>
-          </p>
-          <input
-            type="text"
-            id="busName"
-            name="busName"
-            placeholder="Company Name"
-          />
-        </div>
-        <div class="formPanel">
-          <p>Business Address</p>
-          <input
-            type="text"
-            id="busAddressLine1"
-            name="busAddressLine1"
-            placeholder="Stree Address"
-          />
-          <input
-            type="text"
-            id="busAddressLine2"
-            name="busAddressLine2"
-            placeholder="Stree Address Line 2"
-          />
-          <div class="formPanel__city">
+        <fieldset>
+          <legend>Business Information</legend>
+          <div class="formPanel">
+            <p>
+              Business Type
+              <span>*</span>
+            </p>
+            <select id="busTypes" name="busTypes">
+              <option value="Choose One">Choose One</option>
+              <option value="Sole proprietor">Sole proprietor</option>
+              <option value="Partnership">Partnership</option>
+              <option value="C-Corp">C-Corp</option>
+              <option value="S-Corp">S-Corp</option>
+              <option value="LLC">LLC</option>
+              <option value="Independent contractor"
+                >Independent contractor</option
+              >
+              <option value="Eligible self-employed individual"
+                >Eligible self-employed individual</option
+              >
+              <option value="501(c)(3) nonprofit">501(c)(3) nonprofit</option>
+              <option value="501(c)(19) veterans organization"
+                >501(c)(19) veterans organization</option
+              >
+              <option
+                value="Tribal business (sec. 31(b)(2)(C) of Small Business Act)"
+                >Tribal business (sec. 31(b)(2)(C) of Small Business
+                Act)</option
+              >
+              <option value="Other">Other</option>
+            </select>
+          </div>
+          <div class="formPanel">
+            <p>
+              Business Legal Name
+              <span>*</span>
+            </p>
+            <input
+              type="text"
+              id="busName"
+              name="busName"
+              placeholder="Company Name"
+            />
+          </div>
+          <div class="formPanel">
+            <p>
+              Street Address
+              <span>*</span>
+            </p>
+            <input
+              type="text"
+              id="busAddressLine1"
+              name="busAddressLine1"
+              placeholder="Stree Address"
+            />
+          </div>
+          <div class="formPanel">
+            <p>
+              Street Address Line 2
+              <span>*</span>
+            </p>
+            <input
+              type="text"
+              id="busAddressLine2"
+              name="busAddressLine2"
+              placeholder="Stree Address Line 2"
+            />
+          </div>
+          <div class="formPanel">
+            <p>
+              City
+              <span>*</span>
+            </p>
             <input type="text" id="busCity" name="busCity" placeholder="City" />
+          </div>
+          <div class="formPanel">
+            <p>
+              State
+              <span>*</span>
+            </p>
             <input
               type="text"
               id="busState"
               name="busState"
               placeholder="State"
             />
+          </div>
+          <div class="formPanel">
+            <p>
+              Zip Code
+              <span>*</span>
+            </p>
             <input
               type="text"
               id="busPostalCode"
               name="busPostalCode"
               placeholder="Zip Code"
             />
+          </div>
+          <div class="formPanel">
+            <p>
+              Country
+              <span>*</span>
+            </p>
             <input
               type="text"
               id="busCountry"
@@ -90,34 +128,50 @@
               placeholder="Country"
             />
           </div>
-        </div>
-        <div class="formPanel">
-          <p>Business TIN</p>
-          <input
-            type="password"
-            id="busTin"
-            name="busTin"
-            placeholder="********"
-          />
-        </div>
-        <div class="formPanel">
-          <p>Business Phone</p>
-          <input
-            type="text"
-            id="busPhone"
-            name="busPhone"
-            placeholder="(xxx)xxx-xxxx"
-          />
-        </div>
-        <div class="formPanel">
-          <p>Primary Contact</p>
-          <div class="formPanel__name">
+          <div class="formPanel">
+            <p>
+              Business TIN
+              <span>*</span>
+            </p>
+            <input
+              type="password"
+              id="busTin"
+              name="busTin"
+              placeholder="********"
+            />
+          </div>
+          <div class="formPanel">
+            <p>
+              Business Phone
+              <span>*</span>
+            </p>
+            <input
+              type="text"
+              id="busPhone"
+              name="busPhone"
+              placeholder="(xxx)xxx-xxxx"
+            />
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Primary Contact</legend>
+          <div class="formPanel">
+            <p>
+              First Name
+              <span>*</span>
+            </p>
             <input
               type="text"
               id="busPrimaryContactFirstName"
               name="busPrimaryContactFirstName"
               placeholder="First Name"
             />
+          </div>
+          <div class="formPanel">
+            <p>
+              Last Name
+              <span>*</span>
+            </p>
             <input
               type="text"
               id="busPrimaryContactLastName"
@@ -125,16 +179,19 @@
               placeholder="Last Name"
             />
           </div>
-        </div>
-        <div class="formPanel">
-          <p>Email</p>
-          <input
-            type="email"
-            id="busPrimaryContactEmail"
-            name="busPrimaryContactEmail"
-            laceholder=""
-          />
-        </div>
+          <div class="formPanel">
+            <p>
+              Email
+              <span>*</span>
+            </p>
+            <input
+              type="email"
+              id="busPrimaryContactEmail"
+              name="busPrimaryContactEmail"
+              laceholder=""
+            />
+          </div>
+        </fieldset>
         <div class="formPanel">
           <p>Average Monthly Payroll</p>
           <input
