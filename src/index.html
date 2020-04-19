@@ -191,120 +191,131 @@
               laceholder=""
             />
           </div>
+          <div class="formPanel">
+            <p>
+              Birth Date
+              <span>*</span>
+            </p>
+            <input
+              type="date"
+              id="birthDate"
+              name="birthDate"
+              placeholder="mm/dd/yyyy"
+            />
+          </div>
         </fieldset>
-        <div class="formPanel">
-          <p>Average Monthly Payroll</p>
-          <input
-            type="text"
-            id="busMonthlyPayroll"
-            name="busMonthlyPayroll"
-            placeholder=""
-          />
-        </div>
-        <div class="formPanel">
-          <p>
-            x 2.5 + EIDL, Net of Advance (if Applicable) Equals Loan Request
-          </p>
-          <input
-            type="text"
-            id="busNetAdvance"
-            name="busNetAdvance"
-            placeholder="$"
-          />
-        </div>
-        <div class="formPanel">
-          <p>Number of Employees</p>
-          <input
-            type="text"
-            id="busNumOfEmployees"
-            name="busNumOfEmployees"
-            placeholder=""
-          />
-        </div>
-
-        <div class="formPanel">
-          <p>Purpose of the loan (select more than one)</p>
-
-          <div class="checkbox-container">
-            <label class="checkbox-label">
-              <input
-                type="checkbox"
-                id="loadPurposePayrollloadPurposePayroll"
-              />
-              <span class="checkbox-custom rectangular"></span>
-            </label>
-            <div class="input-title">Payroll</div>
+        <fieldset>
+          <legend>Loan Request</legend>
+          <div class="formPanel">
+            <p>Average Monthly Payroll</p>
+            <input
+              type="text"
+              id="busMonthlyPayroll"
+              name="busMonthlyPayroll"
+              placeholder=""
+            />
           </div>
-          <div class="checkbox-container">
-            <label class="checkbox-label">
-              <input
-                type="checkbox"
-                id="loadPurposeLease"
-                name="loadPurposeLease"
-              />
-              <span class="checkbox-custom rectangular"></span>
-            </label>
-            <div class="input-title">Lease / Mortgage Interest</div>
+          <div class="formPanel">
+            <p>
+              x 2.5 + EIDL, Net of Advance (if Applicable) Equals Loan Request
+            </p>
+            <input
+              type="text"
+              id="busNetAdvance"
+              name="busNetAdvance"
+              placeholder="$"
+            />
           </div>
-          <div class="checkbox-container">
-            <label class="checkbox-label">
-              <input
-                type="checkbox"
-                id="loadPurposeUtility"
-                name="loadPurposeUtility"
-              />
-              <span class="checkbox-custom rectangular"></span>
-            </label>
-            <div class="input-title">Utilities</div>
+          <div class="formPanel">
+            <p>Number of Employees</p>
+            <input
+              type="text"
+              id="busNumOfEmployees"
+              name="busNumOfEmployees"
+              placeholder=""
+            />
           </div>
-          <div class="checkbox-container">
-            <label class="checkbox-label">
-              <input
-                type="checkbox"
-                id="loadPurposeOther"
-                name="loadPurposeOther"
-              />
-              <span class="checkbox-custom rectangular"></span>
-            </label>
-            <div class="input-title">Other</div>
+          <div class="formPanel">
+            <p>Purpose of the loan (select more than one)</p>
+
+            <div class="checkbox-container">
+              <label class="checkbox-label">
+                <input
+                  type="checkbox"
+                  id="loadPurposePayrollloadPurposePayroll"
+                />
+                <span class="checkbox-custom rectangular"></span>
+              </label>
+              <div class="input-title">Payroll</div>
+            </div>
+            <div class="checkbox-container">
+              <label class="checkbox-label">
+                <input
+                  type="checkbox"
+                  id="loadPurposeLease"
+                  name="loadPurposeLease"
+                />
+                <span class="checkbox-custom rectangular"></span>
+              </label>
+              <div class="input-title">Lease / Mortgage Interest</div>
+            </div>
+            <div class="checkbox-container">
+              <label class="checkbox-label">
+                <input
+                  type="checkbox"
+                  id="loadPurposeUtility"
+                  name="loadPurposeUtility"
+                />
+                <span class="checkbox-custom rectangular"></span>
+              </label>
+              <div class="input-title">Utilities</div>
+            </div>
+            <div class="checkbox-container">
+              <label class="checkbox-label">
+                <input
+                  type="checkbox"
+                  id="loadPurposeOther"
+                  name="loadPurposeOther"
+                />
+                <span class="checkbox-custom rectangular"></span>
+              </label>
+              <div class="input-title">Other</div>
+            </div>
           </div>
-        </div>
-
-        <div class="formPanel">
-          <p>Other (explain)</p>
-          <input
-            type="text"
-            id="loadPurposeOtherExplain"
-            name="loadPurposeOtherExplain"
-            placeholder=""
-          />
-        </div>
-
-        <div class="formPanel">
-          <p>Birth Date</p>
-          <input
-            type="date"
-            id="birthDate"
-            name="birthDate"
-            placeholder="mm/dd/yyyy"
-          />
-        </div>
-
+          <div class="formPanel">
+            <p>Other (explain)</p>
+            <input
+              type="text"
+              id="loadPurposeOtherExplain"
+              name="loadPurposeOtherExplain"
+              placeholder=""
+            />
+          </div>
+        </fieldset>
         <h3>Applicant Ownership</h3>
         <p>
           List all owners of 20% or more of the equity of the Applicant. Attach
           a separate sheet if necessary.
         </p>
-
-        <div class="formPanel">
-          <p>Owner 1</p>
-          <div class="formPanel__name">
+        <fieldset>
+          <legend>Owner Information</legend>
+          <div class="formPanel">
+            <p>
+              First Name
+              <span>*</span>
+            </p>
             <input
               type="text"
               id="owner_FirstName_1"
               name="owner_FirstName_1"
               placeholder="First Name"
             />
+          </div>
+          <div class="formPanel">
+            <p>
+              Last Name
+              <span>*</span>
+            </p>
             <input
               type="text"
               id="owner_LastName_1"
@@ -312,67 +323,105 @@
               placeholder="Last Name"
             />
           </div>
-        </div>
-
-        <div class="formPanel">
-          <input
-            type="text"
-            id="ownerTitle_1"
-            name="ownerTitle_1"
-            placeholder="Title"
-          />
-        </div>
-
-        <div class="formPanel">
-          <input
-            type="text"
-            id="ownership_1"
-            name="ownership_1"
-            placeholder="Ownership %"
-          />
-        </div>
-
-        <div class="formPanel">
-          <input
-            type="text"
-            id="ownerTin_1"
-            name="ownerTin_1"
-            placeholder="TIN (EIN, SSN)"
-          />
-        </div>
-
-        <div class="formPanel">
-          <input
-            type="text"
-            id="ownerAddressLine1_1"
-            name="ownerAddressLine1_1"
-            placeholder="Stree Address"
-          />
-          <input
-            type="text"
-            id="ownerAddressLine2_1"
-            name="ownerAddressLine2_1"
-            placeholder="Stree Address Line 2"
-          />
-          <div class="formPanel__city">
+          <div class="formPanel">
+            <p>
+              Title
+            </p>
+            <input
+              type="text"
+              id="ownerTitle_1"
+              name="ownerTitle_1"
+              placeholder="Title"
+            />
+          </div>
+          <div class="formPanel">
+            <p>
+              Ownership %
+              <span>*</span>
+            </p>
+            <input
+              type="text"
+              id="ownership_1"
+              name="ownership_1"
+              placeholder=""
+            />
+          </div>
+          <div class="formPanel">
+            <p>
+              TIN (EIN, SSN)
+              <span>*</span>
+            </p>
+            <input
+              type="password"
+              id="ownerTin_1"
+              name="ownerTin_1"
+              placeholder=""
+            />
+          </div>
+          <div class="formPanel">
+            <p>
+              Stree Address
+              <span>*</span>
+            </p>
+            <input
+              type="text"
+              id="ownerAddressLine1_1"
+              name="ownerAddressLine1_1"
+              placeholder="Stree Address"
+            />
+          </div>
+          <div class="formPanel">
+            <p>
+              Stree Address Line 2
+            </p>
+            <input
+              type="text"
+              id="ownerAddressLine2_1"
+              name="ownerAddressLine2_1"
+              placeholder="Stree Address Line 2"
+            />
+          </div>
+          <div class="formPanel">
+            <p>
+              City
+              <span>*</span>
+            </p>
             <input
               type="text"
               id="ownerCity_1"
               name="ownerCity_1"
               placeholder="City"
             />
+          </div>
+          <div class="formPanel">
+            <p>
+              State
+              <span>*</span>
+            </p>
             <input
               type="text"
               id="ownerState_1"
               name="ownerState_1"
               placeholder="State"
             />
+          </div>
+          <div class="formPanel">
+            <p>
+              Zip Code
+              <span>*</span>
+            </p>
             <input
               type="text"
               id="ownerPostalCode_1"
               name="ownerPostalCode_1"
               placeholder="Zip Code"
             />
+          </div>
+          <div class="formPanel">
+            <p>
+              Country
+              <span>*</span>
+            </p>
             <input
               type="text"
               id="ownerCountry_1"
@@ -380,7 +429,7 @@
               placeholder="Country"
             />
           </div>
-        </div>
+        </fieldset>
 
         <h3>Question</h3>
 
