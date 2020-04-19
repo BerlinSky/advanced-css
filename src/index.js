@@ -2,21 +2,13 @@
 import './styles.css'
 import validate from 'validate.js'
 
-const constraints = {
-  username: {
-    presence: true,
-    exclusion: {
-      within: ['nicklas'],
-      message: "'%{value}' is not allowed"
-    }
-  },
-  password: {
-    presence: true,
-    length: {
-      minimum: 6,
-      message: 'must be at least 6 characters'
-    }
-  }
+import constraints from './form/constraints'
+
+const getFormInfo = () => {
+  const f = document.getElementById('infoForm')
+  const fv = validate.collectFormValues(f)
+  // console.log('form values: ', fv)
+  return fv
 }
 
 const setValidateErrorMessage = () => {
@@ -25,40 +17,34 @@ const setValidateErrorMessage = () => {
   elem.innerHTML = `<span>New Errror Message!!!</span>`
 }
 
-const inputNodeList = document
-  .getElementById('infoForm')
-  .querySelectorAll('select, input')
+// const inputNodeList = document
+//   .getElementById('infoForm')
+//   .querySelectorAll('select, input')
 
-const readNodeList = nodeList => {
-  for (let i = 0; i < nodeList.length; i++) {
-    const d = readInput(nodeList[i])
-    console.log('d', d)
-  }
-}
+// const readNodeList = nodeList => {
+//   for (let i = 0; i < nodeList.length; i++) {
+//     const d = readInput(nodeList[i])
+//     console.log('d', d)
+//   }
+// }
 
-const getFormInfo = () => {
-  const f = document.getElementById('infoForm')
-  const fv = validate.collectFormValues(f)
-  console.log('form values: ', fv)
-}
+// const readInput = elem => {
+//   const d = {
+//     id: elem.id,
+//     currentValue: elem.value,
+//     type: elem.type,
+//     require: elem.required
+//   }
 
-const readInput = elem => {
-  const d = {
-    id: elem.id,
-    currentValue: elem.value,
-    type: elem.type,
-    require: elem.required
-  }
-
-  return d
-}
+//   return d
+// }
 
 function submitApplication(event) {
   event.preventDefault()
 
-  readNodeList(inputNodeList)
-
-  const result = validate({ password: 'bad' }, constraints)
+  // readNodeList(inputNodeList)
+  const formData = getFormInfo()
+  const result = validate(formData, constraints)
   console.log('result', result)
 
   setValidateErrorMessage()
@@ -70,7 +56,4 @@ function submitApplication(event) {
 ;(function() {
   const button = document.getElementById('apply')
   button.addEventListener('click', submitApplication)
-  console.log('start...')
-
-  setValidateErrorMessage()
 })()
