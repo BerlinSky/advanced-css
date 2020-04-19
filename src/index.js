@@ -19,6 +19,12 @@ const constraints = {
   }
 }
 
+const setValidateErrorMessage = () => {
+  const elem = document.querySelector("p[data-input-name='busName']")
+  console.log('elem:', elem)
+  elem.innerHTML = `<span>New Errror Message!!!</span>`
+}
+
 const inputNodeList = document
   .getElementById('infoForm')
   .querySelectorAll('select, input')
@@ -53,8 +59,11 @@ function submitApplication(event) {
   readNodeList(inputNodeList)
 
   const result = validate({ password: 'bad' }, constraints)
-
   console.log('result', result)
+
+  setValidateErrorMessage()
+
+  getFormInfo()
 }
 
 // eslint-disable-next-line no-extra-semi
@@ -63,5 +72,5 @@ function submitApplication(event) {
   button.addEventListener('click', submitApplication)
   console.log('start...')
 
-  getFormInfo()
+  setValidateErrorMessage()
 })()

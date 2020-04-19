@@ -99,7 +99,7 @@ form {
 input,
 select,
 textarea {
-  margin-bottom: 10px;
+  margin-bottom: 0.2rem;
   border: 1px solid #ccc;
   border-radius: 3px;
 }
@@ -350,4 +350,12 @@ fieldset {
   padding: 0 1.5rem 0 1.5rem;
   border: 1px solid var(--main-border-color);
   border-radius: 1rem;
+}
+
+.validationMessage {
+  display: none;
+}
+
+.validationMessage.validationMessage--error {
+  display: block;
 }
