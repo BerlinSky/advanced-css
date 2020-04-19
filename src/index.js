@@ -11,11 +11,17 @@ const getFormInfo = () => {
   return fv
 }
 
-const setValidateErrorMessage = () => {
-  const elem = document.querySelector("p[data-input-name='busName']")
+const setValidationErrorMessage = (elemName, message) => {
+  const elem = document.querySelector(`p[data-input-name=${elemName}]`)
   console.log('elem:', elem)
-  elem.innerHTML = `<span>New Errror Message!!!</span>`
+  elem.innerHTML = `<span>${message}</span>`
 }
+
+// const setValidateErrorMessage = () => {
+//   const elem = document.querySelector("p[data-input-name='busName']")
+//   console.log('elem:', elem)
+//   elem.innerHTML = `<span>New Errror Message!!!</span>`
+// }
 
 // const inputNodeList = document
 //   .getElementById('infoForm')
@@ -44,10 +50,17 @@ function submitApplication(event) {
 
   // readNodeList(inputNodeList)
   const formData = getFormInfo()
-  const result = validate(formData, constraints)
-  console.log('result', result)
+  const resultObject = validate(formData, constraints)
+  console.log('results', resultObject)
 
-  setValidateErrorMessage()
+  for (const elemName in resultObject) {
+    console.log('result', resultObject[elemName])
+    const result = resultObject[elemName]
+    const message = result[0]
+    setValidationErrorMessage(elemName, message)
+  }
+
+  // setValidateErrorMessage()
 
   getFormInfo()
 }

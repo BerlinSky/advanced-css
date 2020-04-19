@@ -3,14 +3,14 @@ const constraints = {
     presence: true,
     length: {
       minimum: 5,
-      message: 'must be at least 6 characters'
+      message: 'must be at least 6 characters.'
     }
   },
   busAddressLine1: {
     presence: true,
     length: {
       minimum: 4,
-      message: 'must be at least 4 characters'
+      message: 'must be at least 4 characters.'
     }
   }
 }
