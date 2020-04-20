@@ -25,29 +25,27 @@
               <span>*</span>
             </p>
             <select id="busTypes" name="busTypes">
-              <option value="Choose One">Choose One</option>
-              <option value="Sole proprietor">Sole proprietor</option>
+              <option value="default">Choose One</option>
+              <option value="SoleProprietor">Sole proprietor</option>
               <option value="Partnership">Partnership</option>
-              <option value="C-Corp">C-Corp</option>
-              <option value="S-Corp">S-Corp</option>
+              <option value="CCorp">C-Corp</option>
+              <option value="SCorp">S-Corp</option>
               <option value="LLC">LLC</option>
-              <option value="Independent contractor"
+              <option value="IndependentContractor"
                 >Independent contractor</option
               >
-              <option value="Eligible self-employed individual"
+              <option value="SelfEmployed"
                 >Eligible self-employed individual</option
               >
-              <option value="501(c)(3) nonprofit">501(c)(3) nonprofit</option>
-              <option value="501(c)(19) veterans organization"
-                >501(c)(19) veterans organization</option
-              >
-              <option
-                value="Tribal business (sec. 31(b)(2)(C) of Small Business Act)"
+              <option value="501C3">501(c)(3) nonprofit</option>
+              <option value="501C19">501(c)(19) veterans organization</option>
+              <option value="Tribal"
                 >Tribal business (sec. 31(b)(2)(C) of Small Business
                 Act)</option
               >
               <option value="Other">Other</option>
             </select>
+            <p data-input-name="busTypes" class="validationMessage"></p>
           </div>
           <div class="formPanel">
             <p>

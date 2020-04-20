@@ -1,4 +1,11 @@
 const constraints = {
+  busTypes: {
+    presence: true,
+    exclusion: {
+      within: { default: 'Choose One' },
+      message: 'must choose one of the types provided.'
+    }
+  },
   busName: {
     presence: true,
     length: {
