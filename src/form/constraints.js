@@ -62,6 +62,18 @@ const constraints = {
       flags: 'i',
       message: '(Tax ID) can only contain 0-9'
     }
+  },
+  busPhone: {
+    presence: true,
+    length: {
+      minimum: 10,
+      message: 'must be 10 digits.'
+    },
+    format: {
+      pattern: '[0-9]+',
+      flags: 'i',
+      message: 'can only contain 0-9'
+    }
   }
 }
 

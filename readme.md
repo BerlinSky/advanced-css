@@ -8,9 +8,9 @@
 
 ```
 
-2 Define validation constraints for all inputs requiring validation
+2 Define validation constraints for all inputs requiring validation'
 
-```const constraints = {
+````const constraints = {
     busAddressLine1: {
       presence: true,
       length: {
@@ -19,4 +19,9 @@
       }
     }
   }
-```
+3 Apply the validation rules to the "Business Information" section
+
+4 Create the HTML tag to house the validation error message. The "data-input-name" is used to link the input element
+
+```<input type="text" id="busName" name="busName" placeholder="Company Name" />
+````
