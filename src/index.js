@@ -2,6 +2,7 @@
 import './styles.css'
 
 import { executeCallbackProcess, endCallback } from './callback'
+import { usePromise, processWithPromise } from './promise'
 
 const enableCallbackButton = () => {
   const elem = document.getElementById('callback')
@@ -11,6 +12,15 @@ const enableCallbackButton = () => {
   })
 }
 
+const enablePromiseButton = () => {
+  const elem = document.getElementById('promise')
+  elem.addEventListener('click', function(event) {
+    event.preventDefault()
+    usePromise(processWithPromise)
+  })
+}
+
 ;(function() {
   enableCallbackButton()
+  enablePromiseButton()
 })()
