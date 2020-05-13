@@ -24,7 +24,7 @@ const mockRequest = () => {
   })
 }
 
-async function sendRequest(promise) {
+const sendRequest = async function(promise) {
   const response = await promise()
   return response.user
 }
