@@ -9,9 +9,14 @@ const mockRequest = () => {
   return new Promise((resolve, reject) => {
     const test = true
 
+    const data = {
+      user: { name: 'John Smith', age: 35 },
+      system: 'natural'
+    }
+
     if (test) {
       setTimeout(() => {
-        resolve('The process ended.')
+        resolve(data)
       }, 2000)
     } else {
       reject('Failed to resolve the issue')
@@ -21,7 +26,7 @@ const mockRequest = () => {
 
 async function sendRequest(promise) {
   const response = await promise()
-  return response
+  return response.user
 }
 
 const useAsync = promise => {
@@ -30,8 +35,9 @@ const useAsync = promise => {
   start()
   infoLog('Running a long process')
 
-  sendRequest(promise).then(response => {
-    infoLog('Finally: ' + response)
+  sendRequest(promise).then(user => {
+    infoLog('User Name: ' + user.name)
+    infoLog('User Age: ' + user.age)
   })
 }
 
