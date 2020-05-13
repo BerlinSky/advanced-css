@@ -3,6 +3,7 @@ import './styles.css'
 
 import { executeCallbackProcess, endCallback } from './callback'
 import { usePromise, processWithPromise } from './promise'
+import { useAsync, mockRequest } from './async'
 
 const enableCallbackButton = () => {
   const elem = document.getElementById('callback')
@@ -20,7 +21,16 @@ const enablePromiseButton = () => {
   })
 }
 
+const enableAsyncButton = () => {
+  const elem = document.getElementById('async')
+  elem.addEventListener('click', function(event) {
+    event.preventDefault()
+    useAsync(mockRequest)
+  })
+}
+
 ;(function() {
   enableCallbackButton()
   enablePromiseButton()
+  enableAsyncButton()
 })()
