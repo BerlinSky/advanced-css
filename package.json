@@ -6,6 +6,9 @@
   "scripts": {
     "start": "webpack-dev-server --open --config webpack.config.dev.js",
     "build": "webpack --config webpack.config.prod.js",
+    "prestart:api": "node mock-server/createMockDb.js",
+    "service": "node json-server/jsonService.js",
+    "prestart:service": "node json-server/createApiMockDb.js",
     "format": "pretty-quick",
     "lint": "eslint ./"
   },
@@ -44,10 +47,11 @@
     "webpack": "^4.25.1",
     "webpack-bundle-analyzer": "^3.0.3",
     "webpack-cli": "^3.1.2",
-    "webpack-dev-server": "^3.1.10",
+    "webpack-dev-server": "^3.11.0",
     "webpack-merge": "^4.1.4"
   },
   "dependencies": {
-    "@babel/polyfill": "^7.0.0"
+    "@babel/polyfill": "^7.0.0",
+    "json-server": "^0.16.1"
   }
 }
