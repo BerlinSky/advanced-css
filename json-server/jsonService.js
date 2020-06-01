@@ -16,7 +16,7 @@ server.use(jsonServer.bodyParser)
 
 // Simulate delay on all requests
 server.use(function(req, res, next) {
-  setTimeout(next, 0)
+  setTimeout(next, 2000)
 })
 
 // Add createAt
@@ -33,7 +33,6 @@ server.post('/books/', function(req, res, next) {
   if (error) {
     res.status(400).send(error)
   } else {
-    res.body.slug = createSlug(req.body.title)
     next()
   }
 })
@@ -45,14 +44,9 @@ server.listen(port, () => {
   console.log(` JSON Sever is running on port ${port}`)
 })
 
-function createSlug(value) {
-  return value
-    .replace(/[^a-z0-9_]+/gi, '-')
-    .replace(/^-|-$/g, '')
-    .toLowerCase()
-}
-
 function validateBook(book) {
+  console.log('book', book)
+
   if (!book.title) return 'Title is required.'
   if (!book.authorId) return 'Author is required.'
   if (!book.category) return 'Category is required.'

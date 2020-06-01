@@ -6,9 +6,8 @@
   "scripts": {
     "start": "webpack-dev-server --open --config webpack.config.dev.js",
     "build": "webpack --config webpack.config.prod.js",
-    "prestart:api": "node mock-server/createMockDb.js",
-    "service": "node json-server/jsonService.js",
     "prestart:service": "node json-server/createApiMockDb.js",
+    "start:service": "node json-server/jsonService.js",
     "format": "pretty-quick",
     "lint": "eslint ./"
   },

@@ -2,31 +2,31 @@ const books = [
   {
     id: 1,
     title: 'My book 1 with this idea',
-    authoId: 1,
+    authorId: 1,
     category: 'Fiction'
   },
   {
     id: 2,
     title: 'My book 2 with this idea',
-    authoId: 2,
+    authorId: 2,
     category: 'Autobiography'
   },
   {
     id: 3,
     title: 'My book 3 with this idea',
-    authoId: 3,
+    authorId: 3,
     category: 'Poem'
   },
   {
     id: 4,
     title: 'My book 4 with this idea',
-    authoId: 4,
+    authorId: 4,
     category: 'Historical Fiction'
   },
   {
     id: 5,
     title: 'My book 5 with this idea',
-    authoId: 5,
+    authorId: 5,
     category: 'Education'
   }
 ]
