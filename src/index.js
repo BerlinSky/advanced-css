@@ -2,9 +2,8 @@
 import './styles.css'
 
 import { executeCallbackProcess, endCallback } from './callback'
-// import { usePromise, processWithPromise } from './promise'
 import { usePromiseFetch } from './promise-fetch'
-import { useAsync, mockRequest } from './async'
+import { useAsyncFetch } from './async-fetch'
 import { useGenerator, mockRequest as request } from './generator'
 
 const enableCallbackButton = () => {
@@ -14,14 +13,6 @@ const enableCallbackButton = () => {
     executeCallbackProcess(endCallback)
   })
 }
-
-// const enablePromiseButton = () => {
-//   const elem = document.getElementById('promise')
-//   elem.addEventListener('click', function(event) {
-//     event.preventDefault()
-//     usePromise(processWithPromise)
-//   })
-// }
 
 const enablePromiseButton = () => {
   const elem = document.getElementById('promise')
@@ -35,7 +26,7 @@ const enableAsyncButton = () => {
   const elem = document.getElementById('async')
   elem.addEventListener('click', function(event) {
     event.preventDefault()
-    useAsync(mockRequest)
+    useAsyncFetch()
   })
 }
 
