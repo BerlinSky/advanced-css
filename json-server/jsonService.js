@@ -5,7 +5,8 @@ const path = require('path')
 const router = jsonServer.router(path.join(__dirname, 'mockDB.json'))
 
 const middlewares = jsonServer.defaults({
-  static: 'node_modules/jso-server/dist'
+  static: 'node_modules/jso-server/dist',
+  noCors: false
 })
 
 // Set the middleware

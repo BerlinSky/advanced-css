@@ -29,34 +29,11 @@
       "title": "My book 5 with this idea",
       "authorId": 5,
       "category": "Education"
-    },
-    {
-      "id": 6,
-      "title": "My book 4 with this idea",
-      "authorId": 3,
-      "category": "Poem",
-      "createdAt": 1590994494310
-    },
-    {
-      "id": "ac53edf7-81d6-4f08-a7a8-5777717b1c83",
-      "title": "My book 7 with this idea",
-      "authorId": 3,
-      "category": "Poem",
-      "createdAt": 1590994601849
     }
   ],
   "authors": [
-    {
-      "id": 1,
-      "name": "Jane Austen"
-    },
-    {
-      "id": 2,
-      "name": "Alexander Dumas"
-    },
-    {
-      "id": 3,
-      "name": "Joan Dion"
-    }
+    { "id": 1, "name": "Jane Austen" },
+    { "id": 2, "name": "Alexander Dumas" },
+    { "id": 3, "name": "Joan Dion" }
   ]
 }
