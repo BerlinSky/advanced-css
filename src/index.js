@@ -4,7 +4,8 @@ import './styles.css'
 import { executeCallbackProcess, endCallback } from './callback'
 import { usePromiseFetch } from './promise-fetch'
 import { useAsyncFetch } from './async-fetch'
-import { useGenerator, mockRequest as request } from './generator'
+// import { useGenerator, mockRequest as request } from './generator'
+import { useGeneratorFetch } from './generator-fetch'
 
 const enableCallbackButton = () => {
   const elem = document.getElementById('callback')
@@ -34,7 +35,7 @@ const enableGeneratorButton = () => {
   const elem = document.getElementById('generator')
   elem.addEventListener('click', function(event) {
     event.preventDefault()
-    useGenerator(request)
+    useGeneratorFetch()
   })
 }
 
