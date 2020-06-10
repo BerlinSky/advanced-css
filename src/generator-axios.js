@@ -13,7 +13,7 @@ function* getBooks() {
   yield response.data
 }
 
-const useGeneratorFetch = () => {
+const retrieveBooks = () => {
   infoLog('Starting the process ...')
 
   const result = getBooks()
@@ -40,4 +40,4 @@ const infoLog = message => {
   console.log(`%c ${counter}: ${message}`, 'color: purple; font-weight: bold;')
 }
 
-export { useGeneratorFetch }
+export { retrieveBooks }
