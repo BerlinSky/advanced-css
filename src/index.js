@@ -5,7 +5,7 @@ import { executeCallbackProcess, endCallback } from './callback'
 import { usePromiseFetch } from './promise-fetch'
 import { useAsyncFetch } from './async-fetch'
 // import { useGenerator, mockRequest as request } from './generator'
-import { useGeneratorFetch } from './generator-fetch'
+import { useGeneratorFetch } from './generator-axios'
 
 const enableCallbackButton = () => {
   const elem = document.getElementById('callback')
